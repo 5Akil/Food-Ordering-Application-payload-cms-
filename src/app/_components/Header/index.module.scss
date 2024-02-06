@@ -1,0 +1,24 @@
+@use '../../_css/queries.scss' as *;
+
+.header {
+  padding: var(--base) 0;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--base) / 2) var(--base);
+}
+
+.logo {
+  color:  rgb(241 58 1);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+// :global([data-theme="light"]) {
+//   .logo {
+//     filter: invert(1);
+//   }
+// }
